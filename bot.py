@@ -11,44 +11,32 @@ from sys import platform
 
 proxylisttext = "proxylist.txt" #nama list proxy
 
-useragent = ['Mozilla/4.0 (compatible; MSIE 5.0; SunOS 5.10 sun4u; X11)',
-                   'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.2pre) Gecko/20100207 Ubuntu/9.04 (jaunty) Namoroka/3.6.2pre',
-                   'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Avant Browser;',
-                   'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)',
-                   'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.1)',
-                   'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.6)',
-                   'Microsoft Internet Explorer/4.0b1 (Windows 95)',
-                   'Opera/8.00 (Windows NT 5.1; U; en)',
-                   'amaya/9.51 libwww/5.4.0',
-                   'Mozilla/4.0 (compatible; MSIE 5.0; AOL 4.0; Windows 95; c_athome)',
-                   'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)',
-                   'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Kubuntu)',
-                   'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; ZoomSpider.net bot; .NET CLR 1.1.4322)',
-                   'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QihooBot 1.0 qihoobot@qihoo.net)',
-                   'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.11 [en]',
-                   "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (X11; U; Linux amd64; rv:5.0) Gecko/20100101 Firefox/5.0 (Debian)",
-                   "Mozilla/5.0 (X11; U; Linux amd64; en-US; rv:5.0) Gecko/20110619 Firefox/5.0",
-                   "Mozilla/5.0 (X11; Linux) Gecko Firefox/5.0",
-                   "Mozilla/5.0 (X11; Linux x86_64; rv:5.0) Gecko/20100101 Firefox/5.0 FirePHP/0.5",
-                   "Mozilla/5.0 (X11; Linux x86_64; rv:5.0) Gecko/20100101 Firefox/5.0 Firefox/5.0",
-                   "Mozilla/5.0 (X11; Linux x86_64) Gecko Firefox/5.0",
-                   "Mozilla/5.0 (X11; Linux ppc; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (X11; Linux AMD64) Gecko Firefox/5.0",
-                   "Mozilla/5.0 (X11; FreeBSD amd64; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:5.0) Gecko/20110619 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 6.1; rv:6.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 6.1.1; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 5.2; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 5.1; U; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 5.1; rv:2.0.1) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 5.0; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0",
-                   "Mozilla/5.0 (Windows NT 5.0; rv:5.0) Gecko/20100101 Firefox/5.0"]
+useragent = ["Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+            "SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)",
+            "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+            "Googlebot/2.1 (+http://www.google.com/bot.html) Mozilla/5.0 (compatible); Googlebot/2.1; (+http://www.google.com/bot.html) Googlebot-Image/1.0",
+            "Googlebot-Video/1.0",
+            "Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)",
+            "Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)",
+            "DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)",
+            "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)",
+            "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)",
+            "facebot",
+            "facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)",
+            "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+            "admantx-sap/2.4 (+http://www.admantx.com/service-fetcher.html)",
+            "Twitterbot",
+            "facebookexternalhit/1.1;line-poker/1.0",
+            "Twitterbot/1.0",
+            "Mozilla/5.0 (compatible; Twitterbot/1.0)",
+            "Twitterbot/1.0 Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36",
+            "TelegramBot+(like+TwitterBot)",
+            "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.11.1 Facebot Twitterbot/1.0",
+            "NetResearchServer/2.5(loopimprovements.com/robot.html)",
+            "facebookexternalhit"]
  
 referer = ['http://google.com','http://bing.com','http://facebook.com','http://twitter.com']
-link    = 'http://wonderwoman.team' #input link
+link    = 'https://mobile.twitter.com/h4j3s' #input link
  
 def Autoclicker(proxy1):
     try:
@@ -60,7 +48,7 @@ def Autoclicker(proxy1):
                                                 ('Referer', random.choice(referer))]
         urllib2.install_opener(opener)
         f = urllib2.urlopen(link)
-        if "http://wonderwoman.team" in f.read(): #input link
+        if "https://mobile.twitter.com/h4j3s" in f.read(): #input link
            print "[X] Link Berhasil Di Kunjungi ..."
         else:
            print "[X] Link gagal di kunjungi !"
